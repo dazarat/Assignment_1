@@ -5,6 +5,9 @@ public class Sphere implements Shape {
     private double radius;
 
     public Sphere(double radius){
+
+        if (radius<0) throw new IllegalArgumentException();
+
         this.radius = radius;
     }
 

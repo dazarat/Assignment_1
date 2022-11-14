@@ -6,6 +6,9 @@ public class Cylinder implements Shape{
     private double radius;
 
     public Cylinder(double height, double radius){
+
+        if (radius < 0 || height < 0) throw new IllegalArgumentException();
+
         this.height = height;
         this.radius = radius;
     }

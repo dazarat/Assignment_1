@@ -7,7 +7,11 @@ public class Cube implements Shape {
 
 
     public Cube(double side){
+
+        if (side < 0) throw new IllegalArgumentException();
+
         this.side = side;
+
     }
 
 
